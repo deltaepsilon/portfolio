@@ -21,7 +21,7 @@
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
   
   <link href="/favicon.ico" type="image/x-icon" rel="icon" />
-  <link href='http://fonts.googleapis.com/css?family=Rokkitt|Hammersmith+One' rel='stylesheet' type='text/css'>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Rokkitt|Hammersmith+One' rel='stylesheet' type='text/css'> -->
   
 </head>
 
@@ -43,48 +43,139 @@
     <div id="main" role="main">
     	<section id=bio class="clearfix">
 			<div class=bio-block>
-				<h2>Hello World</h2>
-				<p>
-					These are some of my web projects. &nbsp;I started out as a financial data analyst, but after two years of automating my analyses and data manipulations, I'm now a programmer who happens to work with lots of data.
-					&nbsp;My specialty is still data, but I've extended into data-driven web applications and the attending user experience.  &nbsp;My current project includes loads of data in a fast-paced production environment where success is 
-					driven by intuitive UX and efficient queries. &nbsp;I work side by side in operations with my users, so I hear every complaint and incorporate a steady stream of suggestions into my product.
-				</p>
-				<p>
-					I work in CakePHP with a heavy dose of JQuery and CoffeeScript. &nbsp;My recent projects have incorporated node.js and socket.io, Oracle PL/SQL stored procedures, MySQL, canvas data charts, Apache optimizations, Amazon EC2/S3, Linux, 
-					Wordpress, elastic layouts and single-page applications. &nbsp;I'm looking for my first excuse to try out some nosql, and I'd like to do more public-facing work where I get to flex my CSS muscles.
-				</p>
+				<h1>Christopher Esplin</h1>
+					<p>I build web applications.</p>
+					<p>I leverage my background in econometrics and financial analysis to make sense of massive troves of data.</p>
+	  				<p>I leverage my experience in back- and front-end web design to make interacting with large databases an intuitive experience.</p>
+	  				<p>See my public repos on <a href="https://github.com/deltaepsilon">github.com</a></p>
+				<h2>Technologies</h2>
+				<ul>
+					<li>
+						Object-Oriented PHP
+						<ul>
+							<li>
+								Symfony2
+							</li>
+							<li>
+								CakePHP
+							</li>
+							<li>
+								Wordpress
+							</li>
+						</ul>
+					</li>
+					<li>
+						Javascript
+						<ul>
+							<li>
+								JQuery
+							</li>
+							<li>
+								CoffeeScript
+							</li>
+							<li>
+								Node.js
+							</li>
+							<li>
+								Socket.io
+							</li>
+						</ul>
+					</li>
+					<li>
+						SQL
+						<ul>
+							<li>
+								Oracle PL/SQL
+							</li>
+							<li>
+								MySQL
+							</li>
+							<li>
+								MongoDB
+							</li>
+						</ul>
+					</li>
+					<li>
+						Other
+						<ul>
+							<li>
+								Linux
+							</li>
+							<li>
+								Amazon EC2/S3
+							</li>
+							<li>
+								Apache2
+							</li>
+							<li>
+								HTML5 Canvas
+							</li>
+							<li>
+								Less CSS
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 		</section>
 		<section id=portfolio class="clearfix">
 			<h1>Projects</h1>
 			<div id=portfolio-1-blurb class=blurb>
+				<h2>GetLimed.com</h2>
+				<p>
+					I implemented a redesign for LIME Marketing's corporate web presence. &nbsp;We began with a pile of images and video, some graphic assets and a a rough concept for an animated image gallery. &nbsp;I bootstrapped the page layout and executed the design over the course of three weeks, producing over 900 lines of JavaScript in the process. 
+				</p>
+			</div>
+			<div id=portfolio-2-blurb class=blurb>
+				<h2>GetLimed.com Mobile</h2>
+				<p>
+					I had already optimized getlimed.com for mobile and iPad, but the gallery concept did not translate well to the smallest screens.  &nbsp;I took cues from the full-sized getlimed.com concept and adapted them for mobile. 
+				</p>
+			</div>
+			<div id=portfolio-3-blurb class=blurb>
+				<h2>Lime CRM</h2>
+				<p>
+					 I wrote this custom CRM application for LIME Marketing using the Symfony2 PHP framework.  &nbsp;I took the project from concept to a working prototype in under a week.
+				</p>
+			</div>
+			<div id=portfolio-4-blurb class=blurb style="display: block">
+				<h2>Cordell Tribute</h2>
+				<p>
+					Every year for Christmas my family can't decide what to get my dad.  &nbsp;Last year my mom suggested socks. &nbsp;I suggested a web application reminscent of Kid Pix, but customized to my father's very unique personality.  Drawing on the canvas will randomly play audio clips of his catch phrases.
+				</p>
+			</div>
+			<div id=portfolio-5-blurb class=blurb>
+				<h2>SweetMuffinSuite.com</h2>
+				<p>
+					SweetMuffinSuite.com is a Wordpress site that I built for a friend of my wife's named Pauline Grayson. &nbsp;I used Pauline's designs to create a custom Wordpress theme for her landing page, blog and portfolio.
+				</p>
+			</div>
+			<div id=portfolio-6-blurb class=blurb>
 				<h2>MelissaEsplin.com</h2>
 				<p>
 					Melissa is my wife, and I am her 24/7 tech support.  &nbsp;I handle the back end of her blog so she can focus on design. &nbsp;In the fall of 2011 I migrated MelissaEsplin.com to Amazon EC2 and S3.
 				</p>
 			</div>
-			<div id=portfolio-2-blurb class=blurb>
-				<h2>ScorpionSurvival.com</h2>
-				<p>
-					In 2009 I launched an eCommerce business that is still selling survival equipment today. &nbsp;I created everything but the graphical elements, which I owe to my wife Melissa. &nbsp;The redesign will be done by November 2011.
-				</p>
-			</div>
-			<div id=portfolio-3-blurb class=blurb>
+			<div id=portfolio-7-blurb class=blurb>
 				<h2>VEx (Vault Express)</h2>
 				<p>
-					I cut my PHP teeth on an internal web application for my workgroup at FamilySearch. &nbsp;I coded the entire thing in Notepad++ and made every mistake. &nbsp;We used VEx to meet all of our goals and it's still used in production six months later.
+					I cut my PHP teeth on an internal web application for my workgroup at FamilySearch. &nbsp;I coded the entire thing in Notepad++ and made every mistake. &nbsp;We used VEx to meet all of our goals and continued to use it every day until the release of VEx 2.0.
 				</p>
 			</div>
-			<div id=portfolio-4-blurb class=blurb>
+			<div id=portfolio-8-blurb class=blurb>
 				<h2>VEx 2.0</h2>
 				<p>
 					VEx 2.0 is a complete rewrite of VEx.  &nbsp;I used the CakePHP framework with extensive Javascript/JQuery.  &nbsp;The second go 'round focused on faster, cleaner code, error handling and fixing all of the UX mistakes from VEx 1.0.
 				</p>
 			</div>
-			<div id=portfolio-1 class=portfolio-block></div>
-			<div id=portfolio-2 class=portfolio-block></div>
-			<div id=portfolio-3 class=portfolio-block></div>
-			<div id=portfolio-4 class=portfolio-block></div>
+			<a href="http://lime.getlimed.com/standard"><div id=portfolio-1 class=portfolio-block></div></a>
+			<a href="http://lime.getlimed.com/small"><div id=portfolio-2 class=portfolio-block></div></a>
+			<a href="http://images.christopheresplin.com/crm.png"><div id=portfolio-3 class=portfolio-block></div></a>
+			<a href="http://cordell.christopheresplin.com"><div id=portfolio-4 class=portfolio-block></div></a>
+			<a href="http://sweetmuffinsuite.com"><div id=portfolio-5 class=portfolio-block></div></a>
+			<a href="http://melissaesplin.com"><div id=portfolio-6 class=portfolio-block></div></a>
+			<a href="http://images.christopheresplin.com/vex.png"><div id=portfolio-7 class=portfolio-block></div></a>
+			<a href="http://images.christopheresplin.com/vex-2.png"><div id=portfolio-8 class=portfolio-block></div></a>
 			<a href="http://www.flickr.com/photos/teleyinex/4758431845/">Thanks to Teleyinex for the background</a>
 		</section>
     </div>

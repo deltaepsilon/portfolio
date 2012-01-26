@@ -229,14 +229,30 @@ td {
   vertical-align: top;
 }
 /* ==|== primary styles =====================================================
-   Author: 
+   Author: Christopher Esplin
    ========================================================================== */
-a {
-  text-decoration: none;
-  color: #FFFFFF;
+/*	Colors	*/
+/*	Fonts	*/
+@font-face {
+  font-family: 'Rokkitt';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Rokkitt'), url('http://themes.googleusercontent.com/static/fonts/rokkitt/v5/RcB7dRNAX_8JE8zinU47YALUuEpTyoUstqEm5AMlJo4.woff') format('woff');
+}
+@font-face {
+  font-family: 'Hammersmith One';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Hammersmith One'), local('HammersmithOne'), url('http://themes.googleusercontent.com/static/fonts/hammersmithone/v3/FWNn6ITYqL6or7ZTmBxRhgaS65eljNVkG0R6HbhLwtY.woff') format('woff');
+}
+/*	General	*/
+a, a:visited {
+  /*	text-decoration: none;*/
+
+  color: #ffffff;
 }
 h1, h2 {
-  font-family: "Hammersmith One";
+  font-family: 'Hammersmith One';
   text-transform: uppercase;
 }
 h2 {
@@ -246,14 +262,14 @@ body,
 .bio-block,
 .portfolio-block,
 #portfolio h1 {
-  background: #FFFFFF;
+  background: #ffffff;
   background: url("http://images.christopheresplin.com/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   margin: 0;
-  font-family: Rokkitt, Helvetica, Arial;
+  font-family: 'Rokkitt', Helvetica, Arial;
 }
 header {
   font-size: 2em;
@@ -261,12 +277,12 @@ header {
   padding: 0.5em 0;
   width: 100%;
   height: 2em;
-  background: #FFFFFF;
+  background: #ffffff;
   background: rgba(0, 0, 0, 0.7);
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-family: "Hammersmith One";
+  font-family: 'Hammersmith One';
 }
 header h1 {
   float: left;
@@ -286,25 +302,25 @@ header h1 {
 }
 nav {
   float: right;
-  margin-top: 0.5em;
+  margin: 0.5em 0.5em 0 0;
 }
 nav ul {
   margin: 0;
   text-align: center;
 }
+nav ul li:nth-child(1) a {
+  color: #eeaf63;
+}
+nav ul li:nth-child(2) a {
+  color: #569f69;
+}
+nav ul li:nth-child(3) a {
+  color: #c44f57;
+}
 nav li {
   display: inline;
   list-style-type: none;
   margin: 0 0 0 1em;
-}
-nav ul li:nth-child(1) a {
-  color: #EEAF63;
-}
-nav ul li:nth-child(2) a {
-  color: #569F69;
-}
-nav ul li:nth-child(3) a {
-  color: #C44D54;
 }
 section {
   width: 100em;
@@ -349,6 +365,8 @@ section {
 }
 .blurb {
   background: rgba(0, 0, 0, 0.7);
+  height: 6em;
+  display: none;
 }
 #portfolio h1 {
   font-size: 3em;
@@ -371,15 +389,27 @@ section {
   height: 7.5em;
 }
 #portfolio-1 {
-  background: url("http://images.christopheresplin.com/melissaesplin.com.png") no-repeat 0% 0%;
+  background: url("http://images.christopheresplin.com/lime.png") no-repeat 0% 0%;
 }
 #portfolio-2 {
-  background: url("http://images.christopheresplin.com/scorpionsurvival.com.png") no-repeat 0% 0%;
+  background: url("http://images.christopheresplin.com/lime-mobile.png") no-repeat 0% 0%;
 }
 #portfolio-3 {
-  background: url("http://images.christopheresplin.com/vex.png") no-repeat 0% 0%;
+  background: url("http://images.christopheresplin.com/crm.png") no-repeat 0% 0%;
 }
 #portfolio-4 {
+  background: url("http://images.christopheresplin.com/cordell.png") no-repeat 0% 0%;
+}
+#portfolio-5 {
+  background: url("http://images.christopheresplin.com/muffin.png") no-repeat 0% 0%;
+}
+#portfolio-6 {
+  background: url("http://images.christopheresplin.com/melissaesplin.com.png") no-repeat 0% 0%;
+}
+#portfolio-7 {
+  background: url("http://images.christopheresplin.com/vex.png") no-repeat 0% 0%;
+}
+#portfolio-8 {
   background: url("http://images.christopheresplin.com/vex-2.png") no-repeat 0% 0%;
 }
 footer {
@@ -395,27 +425,29 @@ footer {
 }
 #attribution a {
   float: right;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
-/* Clearfix */
-.clearfix:after {
-  visibility: hidden;
+.bio-block h2 {
+  margin: 2em 0 0 0;
+}
+.bio-block p {
+  margin: 0 1em;
+}
+.bio-block ul {
+  list-style: none;
+}
+.bio-block > ul > li {
   display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+  float: left;
+  margin-right: 1.5em;
+  text-transform: uppercase;
 }
-.clearfix {
-  display: inline-block;
-}
-/* start commented backslash hack \*/
-* html .clearfix {
-  height: 1%;
-}
-.clearfix {
-  display: block;
+.bio-block > ul > li ul {
+  width: 7em;
+  padding: 0 1em;
+  text-transform: none;
+  margin: .5em 0;
 }
 /* ==|== non-semantic helper classes ======================================== */
 .ir {
