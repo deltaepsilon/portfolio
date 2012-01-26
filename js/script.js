@@ -1,5 +1,6 @@
 (function() {
   var blurbs, links, portfolios, repair;
+
   portfolios = function() {
     var v_denominator_offset, v_offset;
     v_denominator_offset = 20;
@@ -17,6 +18,7 @@
       });
     });
   };
+
   links = function() {
     var o_links;
     o_links = {
@@ -32,6 +34,7 @@
       return console.log(v_id);
     });
   };
+
   blurbs = function() {
     $('.blurb').hide();
     return $('.portfolio-block').each(function() {
@@ -45,6 +48,7 @@
       });
     });
   };
+
   repair = function(v_min_width) {
     var v_width;
     v_width = $(window).width();
@@ -52,6 +56,7 @@
       return $('body').css('font-size', 100 * v_width / v_min_width + '%');
     }
   };
+
   $(document).ready(function() {
     portfolios();
     links();
@@ -61,4 +66,5 @@
       return repair(1760);
     });
   });
+
 }).call(this);
